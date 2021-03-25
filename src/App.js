@@ -18,6 +18,7 @@ class App extends Component {
                 return response.json()
             })
             .then(users => {
+                console.log('users from componentDidMount: ', users)
                 this.setState({ robots: users })
             })
     }
